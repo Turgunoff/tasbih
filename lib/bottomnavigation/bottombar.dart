@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:tasbih/screens/prayer_times_screen.dart';
 import 'package:tasbih/screens/settings_screen.dart';
 import 'package:tasbih/screens/tasbih_screen.dart';
@@ -29,24 +30,24 @@ class BottomNavigationBarClassState extends State<BottomNavigationBarClass> {
           BottomNavigationBarItem(
             icon: Icon(
               _currentIndex == 0
-                  ? Icons.access_alarm // Filled icon for selected
-                  : Icons.access_alarm_outlined, // Outlined icon for unselected
+                  ? IconsaxPlusBold.timer_1 // Filled icon for selected
+                  : IconsaxPlusLinear.timer_1, // Outlined icon for unselected
             ),
             label: 'Namoz vaqtlari',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               _currentIndex == 1
-                  ? Icons.circle // Filled icon for selected
-                  : Icons.circle_outlined, // Outlined icon for unselected
+                  ? IconsaxPlusBold.timer // Filled icon for selected
+                  : IconsaxPlusLinear.timer, // Outlined icon for unselected
             ),
             label: 'Tasbih',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               _currentIndex == 2
-                  ? Icons.settings // Filled icon for selected
-                  : Icons.settings_outlined, // Outlined icon for unselected
+                  ? IconsaxPlusBold.setting_2 // Filled icon for selected
+                  : IconsaxPlusLinear.setting_2, // Outlined icon for unselected
             ),
             label: 'Sozlamalar',
           ),

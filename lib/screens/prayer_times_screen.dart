@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:iconsax_plus/iconsax_plus.dart';
 import 'package:tasbih/change_mode/focus_color.dart';
 import 'package:tasbih/models/international_prayer_times_model.dart';
 import 'package:tasbih/models/uzbekistan_prayer_times_model.dart';
@@ -158,7 +159,7 @@ class PrayerTimesScreenState extends State<PrayerTimesScreen> {
                   alignment: Alignment.centerLeft,
                   child: DropdownButton<String>(
                     value: selectedOption,
-                    icon: const Icon(Icons.arrow_drop_down, size: 30),
+                    icon:  Icon(IconsaxPlusLinear.arrow_down, size: 18),
                     items: const [
                       DropdownMenuItem(
                         value: "Uzbekistan",
@@ -206,9 +207,9 @@ class PrayerTimesScreenState extends State<PrayerTimesScreen> {
                     hintText: selectedOption == "Uzbekistan"
                         ? "Misol uchun, Toshkent"
                         : "Misol uchun, Medina",
-                    prefixIcon: const Icon(Icons.location_city),
+                    prefixIcon:  Icon(IconsaxPlusBold.location,size: 16,),
                     suffixIcon: IconButton(
-                      icon: const Icon(Icons.search),
+                      icon:  Icon(IconsaxPlusLinear.search_normal),
                       onPressed: searchCity,
                     ),
                     filled: true,
